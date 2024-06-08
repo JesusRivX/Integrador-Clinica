@@ -1,0 +1,198 @@
+<footer>
+    <div class="container_footer">
+        <div class="row">
+            <div class="col" id="company">
+                <img src="./logoS.avif" alt="" class="logo" />
+                <p>
+                    Somos una Organización Religiosa de Confesionalidad Católica
+                    y sin ánimo de lucro, cuya misión es manifestar el amor y la
+                    misericordia de Dios a los enfermos y necesitados.
+                </p>
+            </div>
+
+            <div class="col" id="services">
+                <h3>NOSOTROS</h3>
+                <div class="links">
+                    <a href="#"
+                        ><i class="fa-solid fa-arrow-right"></i>La Orden en el
+                        Mundo</a
+                    >
+                    <a href="#"
+                        ><i class="fa-solid fa-arrow-right"></i>Manual de
+                        políticas web</a
+                    >
+                    <a href="#"
+                        ><i class="fa-solid fa-arrow-right"></i>Pastoral
+                        Vocacional</a
+                    >
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>PQRFs</a>
+                </div>
+            </div>
+
+            <div class="col" id="useful-links">
+                <h3>LA OBRA</h3>
+                <div class="links">
+                    <a href="#"
+                        ><i class="fa-solid fa-arrow-right"></i>Red Salud</a
+                    >
+                    <a href="#"
+                        ><i class="fa-solid fa-arrow-right"></i>Red Educación</a
+                    >
+                    <a href="#"
+                        ><i class="fa-solid fa-arrow-right"></i>Red Social</a
+                    >
+                </div>
+            </div>
+
+            <div class="col" id="contact">
+                <h3>CONTACTO</h3>
+                <div class="contact-details">
+                    <i class="ri-map-pin-line"></i>
+                    <p>Av. Nicolás de Arriola N°3250 San Luis</p>
+                </div>
+                <div class="contact-details">
+                    <i class="ri-phone-line"></i>
+                    <p>(01) 319 1414</p>
+                </div><br />
+                <div class="contact-details">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>944 576 008</p>
+                </div><br />
+                <div class="contact-details">
+                    <a
+                        href=""
+                        class="container_button"
+                        style="font-size: .9rem; font-weight: 400; width: 140px;"
+                        >DONACIONES</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: #fff;
+        position: relative;
+        width: 100%;
+        min-height: 250px;
+        padding: 5rem 1rem;
+    }
+
+    .container_footer {
+        max-width: 1540px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .col {
+        color: #f2f2f2f2;
+        font-family: poppins;
+    }
+
+    .col .logo {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+
+    .col h3 {
+        color: #174288;
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        font-size: 1.5rem;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .col .links a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #174288;
+        margin-bottom: 5px;
+        position: relative;
+        transition: 0.3s ease;
+        font-family: "Poppins";
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+
+    .row .col p {
+        font-family: "Poppins";
+        color: #174288;
+        font-size: 0.9rem;
+        padding-right: 45px;
+    }
+
+    .col .links a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background-color: #01a6e0;
+        bottom: 0;
+        left: 27px;
+        transition: width 0.3s ease;
+    }
+
+    .col .links a:hover::after {
+        width: 50%;
+    }
+
+    .col .links a i {
+        margin-right: 10px; /* Agregar margen entre el icono y el texto */
+    }
+
+    .col .contact-details {
+        color: #174288;
+        display: inline-flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .contact-details a {
+        color: #fff;
+    }
+
+    .contact-details a:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /********** Responsive Design ********/
+    @media (max-width: 900px) {
+        .row {
+            flex-direction: column;
+        }
+
+        .col {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+        }
+
+        .col {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    }
+</style>
